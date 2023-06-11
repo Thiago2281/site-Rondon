@@ -2,22 +2,26 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> Rondon </title>
+    <title> login </title>
 </head>
 <body>
     <header>
         <img src="C:\Users\Thiago\Desktop\IFCE\Meu site\Imagens\logo rondon.png" alt="logo_rondon">
         <nav>
-            <a href="login.html">Login</a>
             <a href="index.html">Início</a>
             <a href="detalhes.html">Sobre</a>
             <a href="contate.html">Contate-nos</a>
         </nav>
     </header>
     <section>
-        <h1> O site</h1>
-        <p> Este site foi desenvolvido como uma atividade do curso técnico de informática para internet do Instituto Federal do Ceará, Campus Paracuru</p>
-        <p> Ao ter que escolher um assunto para a elaboração do meu primeiro site, optei por desenvolver um que aborde a história do Marechal Rondon por considerar este um dos maiores brasileiros que já existiu</p>
+        <form>
+            <h2>Login</h2>
+            <label for="usuario">Usuário</label><br>
+            <input type="text" id="usuario" name="usuario"><br>
+            <label for="password">Senha</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="login" class="submit">    
+        </form>
     </section>
     <footer>
         Desenvolvido por <a href="contate.html">Thiago</a>
