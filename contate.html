@@ -2,39 +2,50 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> Contato Rondon </title>
+    <title> Contato </title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tenor">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas Neue">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Slab">
 </head>
 <body>
     <header>
-        <img src="C:\Users\Thiago\Desktop\IFCE\Meu site\Imagens\logo rondon.png" alt="logo_rondon">
         <nav>
-            <a href="C:\Users\Thiago\Desktop\IFCE\Meu site\login.html">Admin</a>
-            <a href="index.html">Início</a>
-            <a href="detalhes.html">Sobre</a>
-            <a href="contate.html">Contate-nos</a>
+            <ul>
+                <li><a class="nav" href="./Admin/login.html">Admin</a></li>
+                <li><a class="nav" href="./contate.html">Contate-nos</a></li>
+                <li><a class="nav" href="./detalhes.html">Sobre</a></li>
+                <li><a class="nav" href="./index.html">Início</a></li>
+            </ul>
         </nav>
+        <img src="./Imagens/logo_rondon.png" alt="logo_rondon" width="250px" img style="padding: 10px;">
     </header>
     <section>
-        <h1> O desenvolvedor</h1>
-        <p> Militar do Serviço de Intendência, formado na Academia Militar das Agulhas Negras, também sou aluno do curso técnico de informática para internet do Instituto Federal do Ceará, Campus Paracuru</p>
-        <p> Entusiasta dos feitos do Marechal Rondon como positivista, militar, explorador e indigenista</p>
+        <h1 id="titulo_destaque"> O desenvolvedor</h1>
+        <p id="texto_destaque"> Militar do Serviço de Intendência, formado na Academia Militar das Agulhas Negras, também sou aluno do curso técnico de informática para internet do Instituto Federal do Ceará, Campus Paracuru</p>
+        <p id="texto_destaque"> Entusiasta dos feitos do Marechal Rondon como positivista, militar, explorador e indigenista</p>
     </section>
-    <section>
-        <h1>Contate-nos</h1>
-        <form>
+    <section id="rodape">
+        <p1 id="destaque_especial">ENTRE EM CONTATO PARA CONTRIBUIÇÕES</p1>
+        <form id="formulario">
             <label for="nome">Nome:</label><br>
             <input type="text" id="nome" name="nome"><br>
             <label for="snome">Sobrenome:</label><br>
             <input type="text" id="snome" name="snome"><br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email"><br>
             <label for="mensagem">Mensagem:</label><br>
             <textarea name="messagem" rows="10" cols="30">
             Escreva aqui sua mensagem
-                </textarea>
-            <input type="submit" value="Enviar">
-        </form>    
+            </textarea>
+            <a href="C:\Users\Thiago\Desktop\IFCE\Meu site\Admin\login.html" class="button button2">Enviar</a>
+        </form>
     </section>
-    <footer>
-        Desenvolvido por <a href="contate.html">Thiago</a>
+    <footer id="footer">
+        <p id="texto_noticia"> Desenvolvido por </p1><a href="./contate.html">Thiago</a>
     </footer>
 </body>
 </html>
