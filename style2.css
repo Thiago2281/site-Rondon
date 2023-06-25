@@ -1,7 +1,7 @@
 :root {
-  --preto: #000000;
-  --cinzaclaro: #ebebeb;
-  --azulescuro: #070d23;
+  --preto: #090753;
+  --cinzaclaro: #f5ed04;
+  --azulescuro: #1f7162;
 }
 
 header {
@@ -36,8 +36,7 @@ a:active {
 li {
   float: right;
   margin-top: 10px;
-  margin-right: 20px;
-
+  margin-right: 10px;
 }
 
 li ul {
@@ -71,7 +70,7 @@ a.titulo:link {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   color: rgb(255, 255, 255);
-  cursor: pointer;
+  cursor: pointer
 }
 
 /* visited link */
@@ -102,18 +101,11 @@ a.titulo:active {
   font-family: "Roboto slab";
   font-size: 20px;
 }
-
-header {
-  position: sticky;
-  top: 0;
-}
-
 .button2 {
   background-color: black;
   font-size: 14px;
   padding: 10px 30px;
 }
-
 h1 {
   margin-top: 0px;
   margin-bottom: 0px
@@ -133,7 +125,6 @@ h2 {
   font-family: "Roboto slab";
   font-size: 15px;
   text-transform: uppercase;
-  padding-top: 5%;
 }
 
 #formulario_center {
@@ -168,6 +159,7 @@ h2 {
 #fundo_azul {
   background-color: var(--azulescuro);
   color: white;
+  text-align: center;
 }
 
 #titulo_destaque {
@@ -181,6 +173,9 @@ h2 {
 #texto_destaque {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
+  padding-top: 20px;
+  padding-right: 15%;
+  padding-left: 15%;
   font-weight: lighter;
 }
 
@@ -213,70 +208,34 @@ h2 {
 }
 
 #footer {
-  background-color: var(--cinzaclaro);
-  position: absolute;
-  bottom: 0;
+  position:absolute;
+  bottom:0; 
 }
 
 .grid {
-  display: grid;
+	display: grid;
   padding: 100px;
 }
 
 .grid-template-columns-1 {
-  grid-template-columns: 50% 50%;
-  text-align: left;
-  padding: 10px 200px 100px 200px;
-  gap: 40px
-}
-
-.grid-template-columns-2 {
-  grid-template-columns: 50% 50%;
-  text-align: justify;
-  padding: 10px 200px 100px 200px;
-  gap: 40px
-}
-
-.grid-template-columns-3 {
-  grid-template-columns: 20% 5% 62%;
-  text-align: left;
-  padding: 80px 200px 100px 200px;
-  gap: 80px
-}
-
-.center {
-  text-align: center;
-}
-
-.justificado {
-  text-align: justify;
+	grid-template-columns: 50% 50%;
 }
 
 .item1 {
   grid-area: item1;
-  text-align: center;
 }
-
 .item2 {
   grid-area: item2;
-  text-align: center;
 }
-
 .item3 {
   grid-area: item3;
-  text-align: center;
 }
-
 .item4 {
   grid-area: item4;
-  text-align: center;
 }
-
 .item5 {
   grid-area: item5;
-  text-align: center;
 }
-
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -284,23 +243,20 @@ h2 {
     'item2 item2 item2'
     'item3 item4 item5';
   gap: 20px;
-  padding: 0px 200px 100px 200px;
+  padding: 0px 200px 40px 200px;
 }
 
 .item10 {
   grid-area: item10;
 }
-
 .item20 {
   grid-area: item20;
   text-align: right;
 }
-
 .item30 {
   grid-area: item30;
   text-align: right;
 }
-
 .item40 {
   grid-area: item40;
   text-align: center;
